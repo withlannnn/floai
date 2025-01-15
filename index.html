@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output Turtle</title>
+    <script type="module" src="https://pyscript.net/alpha/pyscript.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Turtle Drawing</h1>
+    <py-script>
+        import turtle
+
+        t = turtle.Turtle()
+        t.pensize(4)
+        t.shape("turtle")
+        turtle.bgcolor("black")
+
+        def go(x, y):
+            t.penup()
+            t.goto(x, y)
+            t.pendown()
+
+        t.pencolor("DarkKhaki")
+        t.fillcolor("Khaki")
+
+        go(40.03, -167.53)
+        t.begin_fill()
+        t.seth(104.91)
+        t.circle(120.54, 29.94)
+        t.seth(49.57)
+        t.circle(-315.30, 15.58)
+        t.seth(33.99)
+        t.circle(172.07, 64.94)
+        t.seth(185.9)
+        t.circle(227.51, 53.26)
+        t.seth(239.17)
+        t.circle(99.15, 72.41)
+        t.seth(213.64)
+        t.circle(74.25, 50.32)
+        t.seth(336.29)
+        t.circle(108.41, 47.43)
+        t.end_fill()
+    </py-script>
+</body>
+</html>
